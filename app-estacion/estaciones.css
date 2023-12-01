@@ -1,0 +1,92 @@
+*{
+	padding: 0em;
+	margin: 0em;
+	box-sizing: border-box;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+	background-image: url(./Cielo.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	/*Para evitar refresco cuando se desliza al final*/
+	overscroll-behavior: contain;
+}
+
+#wrapper{
+	/*height: 100vh;
+	width: 100vw;*/
+	padding-top: 1em;
+}
+
+#list-estacion{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+#list-estacion-title{
+	text-transform: uppercase;
+	width: 300px;
+	margin-bottom: 0.5em;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+}
+
+.btn-estacion{
+	border-block:solid;
+	color: white;
+	border-radius: 8px;
+	text-decoration: none;
+	margin-bottom: 0.5em;
+	padding: 1em 1em;
+	width: 300px;
+}
+
+.btn-estacion:hover{
+	background-color: rgba(0,0,0,0.2);
+}
+
+.estacion-apodo{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.estacion-ubicacion{
+	font-size: 14px;
+	font-weight: lighter;
+}
+
+.estacion-visitas{
+	text-align: right;
+	font-size: 14px;
+	font-weight: lighter;
+}
+
+.color-ubicacion{
+	color: red;
+}
+
+.color-visitas{
+	color: #f2834d;
+}
+
+.mp{
+	font-weight: 900;
+	display: inline-block;
+}
+
+.status-led{
+	background-image: url(./svg/status.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.status-led::before{
+	content: "\f3c5";
+	visibility: hidden;
+}
